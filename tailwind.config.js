@@ -8,6 +8,7 @@ module.exports = {
     "blogMSIB.html",
     "blogkuliah.html",
     "bloghelu.html",
+    "kontak.html",
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
