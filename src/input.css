@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar-custom {
+    /* Firefox-specific properties */
+    scrollbar-width: thin; /* Menjadikan scrollbar lebih kecil */
+    scrollbar-color: #f04646 #e6e1e100; /* Warna thumb dan track */
+  }
+
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 4px; /* Lebar scrollbar */
+    height: 4px; /* Tinggi scrollbar (horizontal) */
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: #e6e1e100; /* Warna track */
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: #f04646; /* Warna thumb */
+    border-radius: 50px; /* Sudut bulat */
+    border: 1px solid #e6e1e100; /* Tambahkan border agar terlihat lebih jelas */
+  }
+}

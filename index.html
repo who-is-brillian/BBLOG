@@ -1,0 +1,438 @@
+<!doctype html>
+<html class="scrollbar-custom scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <title>BBLOG</title>
+</head>
+
+<body>
+    <div class="max-w-6xl mx-auto my-3 sticky top-0 z-10 bg-white">
+        <nav class="border-accent px-2 mb-2 ">
+            <div class="container mx-auto flex flex-wrap items-center justify-between ease-in-out">
+                <a href="#" class="flex">
+                    <h1 class="text-xl text-primary font-semibold">BBLOG</h1>
+                </a>
+                <div class="flex md:order-1 ">
+
+                    <button data-collapse-toggle="mobile-menu-3" type="button"
+                        class="md:hidden text-primary hover:text-black focus:outline-none focus:ring-2 focus:ring-accent rounded-lg inline-flex items-center justify-center"
+                        aria-controls="mobile-menu-3" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden md:flex gap-7 justify-between items-center w-full md:w-auto md:order-2 "
+                    id="mobile-menu-3">
+                    <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium ">
+                        <li>
+                            <a href="#"
+                                class="bg-primary md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-black md:p-0 rounded"
+                                aria-current="page">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-black md:p-0">Tentang
+                                Saya</a>
+                        </li>
+                        <li>
+                            <a href="#myblog"
+                                class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-black md:p-0">Blog</a>
+                        </li>
+                        <li>
+                            <a href="kontak.html"
+                                class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-black md:p-0">Kontak</a>
+                        </li>
+                    </ul>
+                    <div class="relative mr-3 md:mr-0 block">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <input type="text" id="email-adress-icon"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 md:text-sm rounded-lg focus:ring-accent focus:border-accent block w-full pl-10 p-2"
+                            placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="grid grid-cols-1 lg:grid-cols-3 lg:px-20 md:px-12 px-5 gap-2">
+        <div class="lg:col-span-2 relative">
+            <img class="h-auto max-w-full m-auto rounded-lg" src="img/HERO.jpg" alt="">
+            <div
+                class="absolute bottom-0 h-full rounded-b p-3 bg-black text-tertiary bg-opacity-20 flex flex-col justify-end">
+                <h1 class="lg:text-6xl md:text-3xl text-xl font-medium font-sans md:px-6 ">Jelajahi ide, temukan
+                    inspirasi
+                    baru hari
+                    ini,
+                    <span class="text-primary ">dan ubah perspektifmu!</span>
+                </h1>
+                <div class="md:my-5 my-3 flex gap-2 md:px-6 md:text-lg text-sm">
+                    <a href="https://who-is-brillian.github.io/brillian.github.io/"
+                        class="transition ease-out hover:rotate-3 delay-75 duration-300 hover:border-primary md:py-2 md:px-4 p-2 border-2 rounded-full">Lihat
+                        Portfolio</a>
+                    <a href="https://www.instagram.com/brlyn.dv/"
+                        class="transition ease-out hover:rotate-3 delay-75 duration-300 hover:border-primary md:py-2 md:px-4 border-2 p-2 rounded-full">Ayo,
+                        Berdiskusi</a>
+                </div>
+            </div>
+        </div>
+        <div class="md:col-span-1 md:grid-cols-2 hidden lg:block">
+            <div class="md:col-span-1 pb-1 relative">
+                <img class="h-auto max-w-full m-auto hidden lg:block rounded-lg" src="img/noface.jpg" alt="">
+                <div
+                    class="absolute bottom-1 rounded-b hidden md:block p-3 bg-black text-tertiary bg-opacity-30 min-w-full h-1/2 lg:text-xl md:text-sm">
+                    <a href="">
+                        <h1 class="font-bold">Siapakah saya?</h1>
+                        <p class="lg:text-base">Saya adalah mahasiswa Teknologi Informasi di Politeknik Semen Indonesia,
+                            dengan cita-cita yang setinggi harapan, ingin meraih impian di dunia teknologi.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="md:col-span-1 pt-1 relative hidden lg:block">
+                <img class="h-auto max-w-full m-auto  rounded-lg" src="img/why.jpeg" alt="">
+
+                <div
+                    class="absolute bottom-0 rounded-b hidden md:block p-3 bg-black text-tertiary bg-opacity-30 min-w-full h-1/2 lg:text-xl md:text-sm">
+                    <a href="">
+                        <h1 class="font-bold">Tujuan Blog Ini Di Buat</h1>
+                        <p class="lg:text-base">Blog ini saya buat untuk mengekspresikan perasaan yang tak bisa
+                            diungkapkan, seperti senja yang sulit dijelaskan.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- social media -->
+    <div class="social-media mx-5 md:mx-20 flex border-l-4 border-primary px-3 my-3">
+        <a href="https://www.youtube.com/@brilliandev" target="_blank" aria-label="Youtube">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48"
+                class="w-10 md:15 hover:mr-3 transition-all duration-200 delay-100">
+                <path fill="#FF3D00"
+                    d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z">
+                </path>
+                <path fill="#FFF" d="M20 31L20 17 32 24z"></path>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/brlyn.dv/" target="_blank" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                class="w-10 md:15 hover:mr-3 transition-all duration-200 delay-100" viewBox="0 0 48 48">
+                <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899"
+                    gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#fd5"></stop>
+                    <stop offset=".328" stop-color="#ff543f"></stop>
+                    <stop offset=".348" stop-color="#fc5245"></stop>
+                    <stop offset=".504" stop-color="#e64771"></stop>
+                    <stop offset=".643" stop-color="#d53e91"></stop>
+                    <stop offset=".761" stop-color="#cc39a4"></stop>
+                    <stop offset=".841" stop-color="#c837ab"></stop>
+                </radialGradient>
+                <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
+                    d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                </path>
+                <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813"
+                    gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#4168c9"></stop>
+                    <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+                </radialGradient>
+                <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
+                    d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                </path>
+                <path fill="#fff"
+                    d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
+                </path>
+                <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+                <path fill="#fff"
+                    d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
+                </path>
+            </svg>
+        </a>
+        <a href="https://x.com/Brilliansj" target="_blank" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                class="w-10 md:15 hover:mr-3 transition-all duration-200 delay-100" viewBox="0 0 50 50">
+                <path
+                    d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z">
+                </path>
+            </svg>
+        </a>
+        <a href="https://github.com/who-is-brillian" target="_blank" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                class="w-10 md:15 hover:mr-3 transition-all duration-200 delay-100" viewBox="0 0 30 30">
+                <path
+                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                </path>
+            </svg>
+        </a>
+        <a href="https://web.facebook.com/profile.php?id=100056192124574" target="_blank" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                class="w-10 md:15 hover:mr-3 transition-all duration-200 delay-100" viewBox="0 0 48 48">
+                <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path>
+                <path fill="#fff"
+                    d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z">
+                </path>
+            </svg>
+        </a>
+    </div>
+
+    <section class="min-w-full  overflow-hidden md:mt-15 md:mb-20 my-10 ">
+        <h1 class="text-center text-3xl font-bold mb-5">KATEGORI <span class="text-primary">BLOG</span></h1>
+        <ul
+            class="flex md:gap-3 overflow-x-scroll mx-5 md:mx-20 min-w-1/2 scroll-smooth scrollbar-custom scrollbar-track-transparent">
+            <li class="py-2 md:p-5 flex-shrink-0">
+                <a href="#"
+                    class="px-3 md:px-10 py-1 md:py-2 m-1 md:m-3 border-2 border-primary rounded-full text-center text-sm transition ease-out hover:rotate-3 delay-75 duration-300">Pengalaman</a>
+            </li>
+            <li class="py-2 md:p-5 flex-shrink-0">
+                <a href="#"
+                    class="px-3 md:px-10 py-1 md:py-2 m-1 md:m-3 border-2 border-primary rounded-full text-center text-sm transition ease-out hover:rotate-3 delay-75 duration-300">Teknologi</a>
+            </li>
+            <li class="py-2 md:p-5 flex-shrink-0">
+                <a href="#"
+                    class="px-3 md:px-10 py-1 md:py-2 m-1 md:m-3 border-2 border-primary rounded-full text-center text-sm transition ease-out hover:rotate-3 delay-75 duration-300">Hobi
+                    & Minat</a>
+            </li>
+            <li class="py-2 md:p-5 flex-shrink-0">
+                <a href="#"
+                    class="px-3 md:px-10 py-1 md:py-2 m-1 md:m-3 border-2 border-primary rounded-full text-center text-sm transition ease-out hover:rotate-3 delay-75 duration-300">Karya</a>
+            </li>
+            <li class="py-2 md:p-5 flex-shrink-0">
+                <a href="#"
+                    class="px-3 md:px-10 py-1 md:py-2 m-1 md:m-3 border-2 border-primary rounded-full text-center text-sm transition ease-out hover:rotate-3 delay-75 duration-300">Sudut
+                    Pandang</a>
+            </li>
+            <li class="py-2 md:p-5 flex-shrink-0">
+                <a href="#"
+                    class="px-3 md:px-10 py-1 md:py-2 m-1 md:m-3 border-2 border-primary rounded-full text-center text-sm transition ease-out hover:rotate-3 delay-75 duration-300">Musik</a>
+            </li>
+            <li class="py-2 md:p-5 flex-shrink-0">
+                <a href="#"
+                    class="px-3 md:px-10 py-1 md:py-2 m-1 md:m-3 border-2 border-primary rounded-full text-center text-sm transition ease-out hover:rotate-3 delay-75 duration-300">Tips
+                    & Trik</a>
+            </li>
+            <li class="py-2 md:p-5 flex-shrink-0">
+                <a href="#"
+                    class="px-3 md:px-10 py-1 md:py-2 m-1 md:m-3 border-2 border-primary rounded-full text-center text-sm">Random</a>
+            </li>
+        </ul>
+    </section>
+
+    <main class="grid grid-cols-1 md:grid-cols-11 mx-5 md:mx-20 gap-5">
+        <section class="col-span-1 md:col-span-8">
+            <h1 id="myblog" class="text-center font-sans text-3xl mb-5 font-bold">BLOG <span
+                    class="text-primary">SAYA</span>
+            </h1>
+            <div class="grid gap-4 md:gap-10">
+                <figure>
+                    <a href="blogMSIB.html">
+                        <img class="h-auto max-w-full rounded-lg" src="img/sertificate.jpeg" alt="">
+                        <figcaption class="text-xl md:text-4xl font-semibold underline text-primary ">Pengalaman Studi
+                            Independen
+                            Kampus
+                            Merdeka di
+                            PT.Maleo
+                            Edukasi
+                            Teknologi
+                        </figcaption>
+                    </a>
+                </figure>
+                <div class="grid grid-cols-2 gap-5 md:gap-10">
+                    <figure>
+                        <a href="blogkuliah.html">
+                            <img class="h-auto max-w-full rounded-lg" src="img/polteksijos.jpg" alt="">
+                            <figcaption class="text-sm md:text-2xl font-normal underline text-primary">Pengalaman Kuliah
+                                jurusan
+                                Teknologi
+                                Informasi di
+                                Politeknik semen
+                                indonesia
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="bloghelu.html">
+                            <img class="h-auto max-w-full rounded-lg" src="img/HeluProject.png" alt="">
+                            <figcaption class="text-sm md:text-2xl font-normal underline text-primary">Projek HELU
+                                (Helping
+                                Education)
+                                platform
+                                pembelajaran bahasa inggris
+                            </figcaption>
+                        </a>
+
+                    </figure>
+                    <figure>
+                        <a href="hobby.html">
+                            <img class="h-auto max-w-full rounded-lg" src="img/hobby.jpg" alt="">
+                            <figcaption class="text-sm md:text-2xl font-normal underline text-primary">Terlalu banyak
+                                hobi akan
+                                mengganggu
+                                proses
+                                belajar?
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="rekomendasimusik.html">
+                            <img class="h-auto max-w-full rounded-lg" src="img/music.jpeg" alt="">
+                            <figcaption class="text-sm md:text-2xl font-normal underline text-primary">Rekomendasi genre
+                                musik
+                                pada saat
+                                melakukan
+                                aktivitas
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+            </div>
+
+        </section>
+        <aside class="hidden md:block md:col-span-3">
+            <h1 class="text-center font-bold bg-primary rounded mb-5 text-tertiary">Topik Terbaru</h1>
+            <ul>
+                <a href="blogMSIB.html">
+                    <li class="flex flex-wrap items-center justify-center">
+                        <img src="img/sertificate.jpeg" alt="terbaru1">
+                        <p class="text-gray-500">By Brillian <time datetime="2025-01-14">14 Januari 2025</time>
+                        </p>
+                        <h1 class="underline text-primary">Pengalaman Studi Independen Kampus Merdeka di PT.Maleo
+                            Edukasi
+                            Teknologi</h1>
+                    </li>
+                </a>
+            </ul>
+        </aside>
+    </main>
+
+    <footer id="footer" class="bg-gray-800 dark:bg-gray-400 pt-24 pb-12 mt-32">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-12 text-slate-300 dark:text-gray-700 font-medium md:w-1/3">
+                    <h2 class="font-bold text-4xl text-primary mb-5">
+                        Muhammad Brillian Mujahid Kamal
+                    </h2>
+                    <h3 class="font-bold text-2xl mb-2 text-primary dark:text-gray-700">Contact Me</h3>
+                    <p>brillianhernandez@gmail.com</p>
+                    <p>Tebaloan, Kec.Duduksampeyan</p>
+                    <p>Kabupaten Gresik</p>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl mb-5 text-primary">
+                        Writing Category
+                    </h3>
+                    <ul class="text-slate-300 dark:text-gray-700">
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-primary mb-3">Programming</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-primary mb-3">Technology</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-primary mb-3">Lifestyle</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-primary mb-5">Link</h3>
+                    <ul class="text-slate-300 dark:text-gray-700">
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-primary mb-3">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="inline-block text-base hover:text-primary mb-3">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="inline-block text-base hover:text-primary mb-3">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#blog" class="inline-block text-base hover:text-primary mb-3">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="inline-block text-base hover:text-primary mb-3">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full pt-10 border-t border-slate-700">
+                <div class="flex items-center justify-center mb-5">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/brlyn_mk/" target="_blank"
+                        class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-primary shadow-lg hover:bg-emerald-500 hover:shadow-emerald-500/50 transition duration-300 ease-in-out text-primary hover:text-white">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20px"
+                            class="fill-current">
+                            <title>Instagram</title>
+                            <path
+                                d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077">
+                            </path>
+                        </svg></a>
+
+                    <!-- X -->
+                    <a href="https://x.com/Brilliansj" target="_blank"
+                        class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-primary shadow-lg hover:bg-emerald-500 hover:shadow-emerald-500/50 transition duration-300 ease-in-out text-primary hover:text-white">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20px"
+                            class="fill-current">
+                            <title>X</title>
+                            <path
+                                d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z">
+                            </path>
+                        </svg></a>
+
+                    <!-- Facebook -->
+                    <a href="https://web.facebook.com/profile.php?id=100056192124574" target="_blank"
+                        class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-primary shadow-lg hover:bg-emerald-500 hover:shadow-emerald-500/50 transition duration-300 ease-in-out text-primary hover:text-white">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20px"
+                            class="fill-current">
+                            <title>Facebook</title>
+                            <path
+                                d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z">
+                            </path>
+                        </svg></a>
+
+                    <!-- Github -->
+                    <a href="https://github.com/who-is-brillian" target="_blank"
+                        class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-primary shadow-lg hover:bg-emerald-500 hover:shadow-emerald-500/50 transition duration-300 ease-in-out text-primary hover:text-white">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20px"
+                            class="fill-current">
+                            <title>GitHub</title>
+                            <path
+                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+                            </path>
+                        </svg></a>
+                </div>
+                <p class="font-medium text-xs text-slate-500 text-center">
+                    Made by
+                    <a href="https://www.instagram.com/anandasatr_3" target="_blank"
+                        class="font-bold text-primary">Muhammad
+                        Brillian Mujahid Kamal</a>, with
+                    <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="dist/flowbite.bundle.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>
